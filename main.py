@@ -10,3 +10,5 @@ for i in range(5):
     lag_skraastrek()
     pausa = randint(4, 20)
     basic.pause(100*pausa)
+    frekvens = randint(100,800)
+    music.play_tone(frekvens, music.beat(BeatFraction.WHOLE))

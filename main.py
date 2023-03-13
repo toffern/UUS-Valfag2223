@@ -1,7 +1,12 @@
-def on_every_interval():
-    for i in range(5):
-        led.plot(i, i)
+def lag_skraastrek():
+    for i in range(20):
+        x = randint(0, 4)
+        y = randint(0, 4)
+        led.plot(x, y)
         basic.pause(100)
     basic.clear_screen()
 
-loops.every_interval(1000, on_every_interval)
+for i in range(5):
+    lag_skraastrek()
+    pausa = randint(4, 20)
+    basic.pause(100*pausa)
